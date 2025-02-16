@@ -12,9 +12,9 @@ function App() {
   return (
     <>
       {/* <Navbar /> */}
-      <Course course='HTML' price={20} image={htmlimg} />
-      <Course course='CSS' price={20} image={cssimg} />
-      <Course course="Javascript" price={30} image={jsimg} />
+      <Course course='HTML' price={20} image={htmlimg} rating={5} show={true} />
+      <Course course='CSS' price={20} image={cssimg} rating={5} show={true} />
+      <Course course="Javascript" price={30} image={jsimg} rating={5} show={true} />
       <Course />
       {/* <Footer /> */}
     </>
