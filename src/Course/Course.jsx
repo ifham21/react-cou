@@ -1,6 +1,7 @@
 import React from 'react'
+import HTML from '../assets/html.jpg'
 
-const Course = ({course, price, image}) => {
+const Course = ({course = "To be announce", price = "To be announce", image = HTML}) => {
 
   return (
     <div className='card'>
