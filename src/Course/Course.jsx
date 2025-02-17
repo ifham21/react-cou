@@ -1,7 +1,7 @@
 import React from 'react'
 import HTML from '../assets/html.jpg'
 
-const Course = ({course = "To be announce", price = "To be announce", image = HTML, rating = "not added", show}) => {
+const Course = ({course = "To be announce", price = 0, image = HTML, rating = 0, show = false }) => {
 
   //Contional rendering
   if(show){
