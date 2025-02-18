@@ -24,12 +24,6 @@ const CourseList = () => {
             image: jsimg, 
             rating: 5,
         },
-        {
-            course: 'Javascript',
-            price: '$50', 
-            image: jsimg, 
-            rating: 5,
-        },
 
     ]
 
