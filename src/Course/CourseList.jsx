@@ -27,11 +27,11 @@ const CourseList = () => {
 
     ]
 
-    // const courseList = courses.map((course, index) => {
-    //     return(
-
-    //     )
-    // })
+    const courseList = courses.map((course, index) => {
+        return(
+            <Course name={course.name} image ={course.image} price={course.price} rating={course.rating} />
+        )
+    })
 
   return (
     <div>CourseList</div>
