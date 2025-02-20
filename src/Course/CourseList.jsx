@@ -7,32 +7,38 @@ import Course from "./Course";
 const CourseList = () => {
   const courses = [
     {
-      course: "HTML",
+      name: "HTML",
       price: "$20",
       image: htmlimg,
       rating: 5,
     },
     {
-      course: "CSS",
+      name: "CSS",
       price: "$20",
       image: cssimg,
       rating: 5,
     },
     {
-      course: "Javascript",
+      name: "Javascript",
       price: "$30",
+      image: jsimg,
+      rating: 5,
+    },
+    {
+      name: "React",
+      price: "$70",
       image: jsimg,
       rating: 5,
     },
   ];
 
-  const courseList = courses.map((courses, index) => {
+  const courseList = courses.map((course, index) => {
     return (
       <Course
-        name={courses.name}
-        image={courses.image}
-        price={courses.price}
-        rating={courses.rating}
+        name={course.name}
+        image={course.image}
+        price={course.price}
+        rating={course.rating}
         key={index}
       />
     );
