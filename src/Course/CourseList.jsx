@@ -1,7 +1,8 @@
 import React from "react";
-import htmlimg from "./assets/html.jpg";
-import cssimg from "./assets/css.jpg";
-import jsimg from "./assets/js.png";
+import htmlimg from "../assets/html.jpg";
+import cssimg from "../assets/css.jpg";
+import jsimg from "../assets/js.png";
+import Course from "./Course";
 
 const CourseList = () => {
   const courses = [
@@ -25,13 +26,13 @@ const CourseList = () => {
     },
   ];
 
-  const courseList = courses.map((course, index) => {
+  const courseList = courses.map((courses, index) => {
     return (
       <Course
-        name={course.name}
-        image={course.image}
-        price={course.price}
-        rating={course.rating}
+        name={courses.name}
+        image={courses.image}
+        price={courses.price}
+        rating={courses.rating}
         key={index}
       />
     );
